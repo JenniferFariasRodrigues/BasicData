@@ -1,0 +1,17 @@
+package entities;
+
+public class Employee {
+	String name;
+	String id;
+	String salary;
+	public Employee(String name, String id, String salary) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.salary = salary;
+	}
+	
+	
+	
+
+}

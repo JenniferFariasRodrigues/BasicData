@@ -1,0 +1,32 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Rent;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		int n = 10;
+		Rent[] vect = new Rent[n];
+
+		for (int i=0; i < vect.length; i++) {
+
+			if (vect[i] != null) {
+				String name = sc.nextLine();
+				String email= sc.nextLine();
+				vect[1] = new Rent(name,email);
+				vect[5] = new Rent(name,email);
+				vect[8] = new Rent(name,email);
+				
+
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,49 @@
+package entities;
+
+public class Account {
+	
+	private int  number;
+	public String holder;
+	public String balance;
+	public String deposit;
+	public double value;
+
+	public Account(int number, String holder, String deposit2) {
+		super();
+		this.number = number;
+		this.holder = holder;
+		//this.balance = deposit2;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public String getHolder() {
+		return holder;
+	}
+
+	public void setHolder(String holder) {
+		this.holder = holder;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
+	public void deposit(double value) {
+		this.value += value;
+	}
+	
+	
+	
+}
+

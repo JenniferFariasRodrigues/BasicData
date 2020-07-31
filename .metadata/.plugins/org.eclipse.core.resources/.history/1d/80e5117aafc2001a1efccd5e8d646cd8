@@ -1,0 +1,67 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+////Exercicio1:Fazer um programa para ler um número inteiro, e depois dizer se este número é negativo ou não
+//		Locale.setDefault(Locale.US);
+//		Scanner sc = new Scanner(System.in);
+//		double number;
+//		
+//		System.out.println("Write a number:");
+//		number = sc.nextDouble();
+//		
+//		if(number <0) {
+//			System.out.println("Negative number");
+//		}
+//		else {
+//			System.out.println("Positive number");
+//		}
+
+		
+//		//Exercicio2:Fazer um programa para ler um número inteiro e dizer se este número é par ou ímpar.
+//		Locale.setDefault(Locale.US);
+//		Scanner sc = new Scanner(System.in);
+//		int number,restoDivisao,resultado;
+//		
+//		System.out.println("Write a number:");
+//		number = sc.nextInt();
+//		
+//		restoDivisao = number%2;
+//				
+//		
+//		if (restoDivisao==0 ) {
+//			System.out.println("Pair number");
+//		} else {
+//			System.out.println("Odd number");
+//		}		
+//	
+		
+//		Exercício3:Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou "Nao sao
+//		Multiplos", indicando se os valores lidos são múltiplos entre si. Atenção: os números devem poder ser digitados em
+//		ordem crescente ou decrescente.
+		
+		Scanner sc = new Scanner (System.in);
+		int number1, number2,result1,result2;
+		
+		System.out.println("Write number one:");
+		number1 = sc.nextInt();
+		number2 = sc.nextInt();
+		
+		result1 = number1/number2;
+		result2 = number2/number1;
+		
+		if(result1%2==0  || result2 %2==0) {
+			System.out.println("They are mulpiples");
+		}
+		else{
+			System.out.println("They are not multiples");
+		}
+;		
+		
+		
+//	Final da static e public classe main
+	}
+
+}

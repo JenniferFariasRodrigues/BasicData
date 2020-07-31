@@ -1,0 +1,174 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+////Exercicio1:Fazer um programa para ler um número inteiro, e depois dizer se este número é negativo ou não
+//		Locale.setDefault(Locale.US);
+//		Scanner sc = new Scanner(System.in);
+//		double number;
+//		
+//		System.out.println("Write a number:");
+//		number = sc.nextDouble();
+//		
+//		if(number <0) {
+//			System.out.println("Negative number");
+//		}
+//		else {
+//			System.out.println("Positive number");
+//		}
+
+		
+//		//Exercicio2:Fazer um programa para ler um número inteiro e dizer se este número é par ou ímpar.
+//		Locale.setDefault(Locale.US);
+//		Scanner sc = new Scanner(System.in);
+//		int number,restoDivisao,resultado;
+//		
+//		System.out.println("Write a number:");
+//		number = sc.nextInt();
+//		
+//		restoDivisao = number%2;
+//				
+//		
+//		if (restoDivisao==0 ) {
+//			System.out.println("Pair number");
+//		} else {
+//			System.out.println("Odd number");
+//		}		
+//	
+		
+////		Exercício3:Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou "Nao sao
+////		Multiplos", indicando se os valores lidos são múltiplos entre si. Atenção: os números devem poder ser digitados em
+////		ordem crescente ou decrescente.
+//		
+//		Scanner sc = new Scanner (System.in);
+//		int number1, number2,result1,result2;
+//		
+//		System.out.println("Write number one:");
+//		number1 = sc.nextInt();
+//		System.out.println("Write number two:");
+//		number2 = sc.nextInt();
+//		
+//		result1 = number1%number2;
+//		result2 = number2%number1;
+//		
+//		if(result1==0  || result2==0) {
+//			System.out.println("They are mulpiples.");
+//		}
+//		else{
+//			System.out.println("They are not multiples.");
+//		}
+		
+//	
+////		Exercício4:Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo pode
+////		começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
+//		Scanner sc = new Scanner(System.in);
+//		int timeGame;
+//		
+//		
+//		System.out.println("Enter the start time of the game:");
+//		int initialHour = sc.nextInt();
+//		System.out.println("Enter the final game time:");
+//		int finalHour = sc.nextInt();
+//		
+//		if(initialHour < finalHour) {
+//			
+//				timeGame=finalHour-initialHour;
+//				System.out.println("The duration game is:"+timeGame);
+//								
+//			}
+//			else {
+//				timeGame= 24 - initialHour+finalHour;
+//				System.out.println("The duration game is:"+timeGame+ "Hour(s)");
+//				
+//				
+//			
+//									
+//		}
+//		
+		
+////		Exercício5:Com base na tabela abaixo, escreva um programa que leia o código de um item e a quantidade deste item. A
+////		seguir, calcule e mostre o valor da conta a pagar.
+//		Locale.setDefault(Locale.US);
+//		Scanner sc = new Scanner(System.in);
+//		
+//		
+//		System.out.println("Enter code of dog:");
+//		int code = sc.nextInt();
+//		String specification;
+//		double price,value = 0;
+//		
+//		switch(code) {
+//		case 1:
+//			specification ="Cachorro quente";
+//			value = 4.00;
+//			break;
+//		case 2:
+//			specification = "X-salada";
+//			value = 4.50;
+//			break;
+//		case 3:
+//			specification ="X-Bacon";
+//			value = 5.00;
+//			break;
+//		case 4:
+//			specification ="Torrada simples";
+//			value = 2.00;
+//			break;
+//		case 5:
+//			specification ="Refrigerante";
+//			value = 1.50;
+//			break;			
+//		}
+//		
+//		
+//		
+//		System.out.println("Enter quantity of dog:");
+//		int quantity = sc.nextInt();
+//		double finalPrice = quantity * value;
+//		
+//		
+//		System.out.printf("The total price is:R$ %.2f ",finalPrice);
+//		
+//		Exercício6:Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem dizendo em qual dos
+//		seguintes intervalos ([0,25], (25,50], (50,75], (75,100]) este valor se encontra. Obviamente se o valor não estiver em
+//	nenhum destes intervalos, deverá ser impressa a mensagem “Fora de intervalo”.
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.println("Enter code of dog:");
+		double number = sc.nextDouble();
+		String specification;
+		
+		
+		if (number < 0.00 || number >100.0) {
+			System.out.println("Fora do intervalo especificado.");
+			
+		}
+		else if(number <=25.0) {
+			System.out.println("Intervalo (0,25)");
+		}
+		else if(number <=50.0){
+			System.out.println("Intervalo (25,50)");
+		}
+		else if(number <= 75.0) {
+			System.out.println("Intervalo (50,75)");
+		}
+		else {
+			System.out.println("Intervalo (75,100)");
+		}
+		
+		
+		
+		System.out.println("Enter quantity of dog:");
+		int quantity = sc.nextInt();
+		double finalPrice = quantity * value;
+		
+		//	Final da static e public classe main
+		sc.close();
+	}
+
+}

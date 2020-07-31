@@ -1,0 +1,44 @@
+/*Programa para leitura de dois números inteiros M e N, e depois ler
+uma matriz de M linhas por N colunas contendo números inteiros,
+podendo haver repetições. Em seguida, ler um número inteiro X que
+pertence à matriz. Para cada ocorrência de X, mostrar os valores à
+esquerda, acima, à direita e abaixo de X, quando houver, conforme
+exemplo.*/
+
+package application;
+
+import java.util.Scanner;
+
+public class ProgramExercise {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Lines number: ");
+		int m = sc.nextInt();
+		System.out.println("Coluns number: ");
+		int n = sc.nextInt();
+//	Instancia matriz ixj=linhasxcolunas
+		int[][] mat = new int[m][n];
+		
+		for(int i=0; i<mat.length;i++) {
+			for(int j=0;j<mat[i].length;j++) {
+				mat[i][j] = sc.nextInt();
+			}
+		}
+		System.out.println("Write number to be read: ");
+		Integer number = sc.nextInt();
+		for (int i = 0; i < mat.length; i++) {
+			//elementos linha=elementos coluna
+			Integer n1=null;
+			if(n1==number)			
+			
+			System.out.print(mat[i][i] + " ");
+		}
+		
+		
+		
+		sc.close();
+
+	}
+
+}

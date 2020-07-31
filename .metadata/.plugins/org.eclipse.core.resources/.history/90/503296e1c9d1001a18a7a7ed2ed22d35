@@ -1,0 +1,59 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Rent;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("How many rooms will be rented?");
+		int n = sc.nextInt();
+		int vectnumber = 9;
+		Rent[] vect = new Rent[vectnumber];
+
+		for (int i = 0; i < n; i++) {
+			for (int a = 0; a < vect.length; a++) {
+
+				if (vect[a] != null) {
+					sc.hasNextLine();
+					String name = sc.nextLine();
+					String email = sc.nextLine();
+					if (i == 1) {
+						System.out.println("Rent #1:");
+						vect[1] = new Rent(name, email);
+					}
+
+					if (i == 5) {
+						System.out.println("Rent #2:");
+						vect[5] = new Rent(name, email);
+					}
+
+					if (i == 8) {
+						System.out.println("Rent #3:");
+						vect[8] = new Rent(name, email);
+					}
+
+				}
+
+			}
+
+		}
+		String nameprint = null;
+		String emailprint = null;
+		for (int j = 0; j < vect.length; j++) {
+//			nameprint = vect[j].getName();
+//			emailprint = vect[j].getEmail();
+			System.out.println("Busy rooms" + vect[j] + ":" + nameprint + "," + emailprint);
+		}
+
+//		System.out.println("Busy rooms"+vect[1]+nameprint+emailprint);
+
+		sc.close();
+	}
+
+}

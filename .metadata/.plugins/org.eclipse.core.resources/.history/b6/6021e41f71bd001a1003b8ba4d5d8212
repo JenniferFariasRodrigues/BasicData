@@ -1,0 +1,39 @@
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		String x;
+		
+		
+//		System.out.println("Digite algo: \n");
+//		x = sc.next();
+//		System.out.println(" Voce digitou:" + x);
+		
+		/* Ler numero inteiro */
+//		int y;
+//		System.out.println("Digite um numero: ");
+//		y = sc. nextInt();
+////		System.out.printf("Digite um numero: %f \n",y);
+//		
+//		System.out.println("O numero digitado eh: " + y);
+		
+		/* Ler variaveis double */
+		
+		double y;
+		System.out.println("Digite um numero: ");
+		
+		y = sc. nextDouble();
+		System.out.printf("Digite um numero: %f \n",y);
+		
+		System.out.println("O numero digitado eh: " + y);
+		
+		sc.close();
+
+	}
+
+}

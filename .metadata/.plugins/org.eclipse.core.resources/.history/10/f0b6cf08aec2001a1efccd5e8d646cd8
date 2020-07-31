@@ -1,0 +1,44 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+////Exercicio1:Fazer um programa para ler um número inteiro, e depois dizer se este número é negativo ou não
+//		Locale.setDefault(Locale.US);
+//		Scanner sc = new Scanner(System.in);
+//		double number;
+//		
+//		System.out.println("Write a number:");
+//		number = sc.nextDouble();
+//		
+//		if(number <0) {
+//			System.out.println("Negative number");
+//		}
+//		else {
+//			System.out.println("Positive number");
+//		}
+
+		
+		//Exercicio2:Fazer um programa para ler um número inteiro e dizer se este número é par ou ímpar.
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		int number,restoDivisao,resultado;
+		
+		System.out.println("Write a number:");
+		number = sc.nextInt();
+		
+		restoDivisao = number%2;
+		resultado = restoDivisao/2;
+		
+		
+		if (restoDivisao==1|| restoDivisao==2 ||restoDivisao==4 || restoDivisao==8 || restoDivisao==10 || restoDivisao==12 ) {
+			System.out.println("Pair number");
+		} else {
+			System.out.println("Odd number");
+		}		
+	
+//	Final da static e public classe main
+	}
+
+}
